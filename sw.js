@@ -9,8 +9,10 @@ self.addEventListener('push', (e) => {
             primaryKey : '2'
         },
         actions : [{
-            action : 'explore' ,
-            title : 'Explor this new world!', 
+            action : 'Open Post' ,
+            title : 'View Post', 
+            link : 'https://dev3.webtalk.co/n/30791',
+            href : 'https://dev3.webtalk.co/n/30791',
             icon : 'https://dev3-image-cdn.webtalk.co/10000758/315ffaae861b4080bfff8328b0ecdc4b_93c0faf1a3c34f10abf71a22937aa356__w_200-h_200.jpg',
         },
         {

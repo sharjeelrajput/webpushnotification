@@ -1,7 +1,7 @@
 self.addEventListener('push', (e) => {
 
     var options = {
-        body : "This notification was Generated from push.",
+        body : "Ghafoor has posted new post.",
         icon : 'images/example.png',
         vibrate : [100, 50 , 100],
         data : { 
@@ -11,7 +11,7 @@ self.addEventListener('push', (e) => {
         actions : [{
             action : 'explore' ,
             title : 'Explor this new world!', 
-            icon : 'images/checkmark.png',
+            icon : 'https://dev3-image-cdn.webtalk.co/10000758/315ffaae861b4080bfff8328b0ecdc4b_93c0faf1a3c34f10abf71a22937aa356__w_200-h_200.jpg',
         },
         {
             action : 'close' ,
@@ -19,5 +19,5 @@ self.addEventListener('push', (e) => {
             icon : 'images/xmark.png',
         }]
     };
-    e.waitUntil(self.registration.showNotification('Hello world!', options));
+    e.waitUntil(self.registration.showNotification('Hello Sharjeel ..', options));
   });

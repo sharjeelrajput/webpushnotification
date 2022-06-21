@@ -18,6 +18,6 @@ self.addEventListener('push', (e) => {
             title : 'close', 
             icon : 'images/xmark.png',
         }]
-    }
-    self.registration.showNotification('Hello world!', options);
+    };
+    e.waitUntil(self.registration.showNotification('Hello world!', options));
   });
